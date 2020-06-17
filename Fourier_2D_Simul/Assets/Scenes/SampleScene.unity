@@ -154,6 +154,12 @@ MonoBehaviour:
   vector: {fileID: 5416762203729291280, guid: 893fc7bfdf8e41a49a96dfc8d35de5eb, type: 3}
   node: {fileID: 1867833504618287781, guid: e3a4815c5548f464cb51edfce8cb2096, type: 3}
   dot: {fileID: 1387365405403614545, guid: 6dfa354e7b44804439571d02b1adcd60, type: 3}
+  coord: {x: 0, y: 0}
+  vectorNumber: 200
+  maxAmplitude: 10
+  maxPeriod: 7
+  frequency: 0.00001
+  speed: 0.001
 --- !u!4 &196088698
 Transform:
   m_ObjectHideFlags: 0
@@ -204,7 +210,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.4716981, g: 0.4716981, b: 0.4716981, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -221,7 +227,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 100
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

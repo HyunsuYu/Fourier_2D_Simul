@@ -10,21 +10,20 @@ public class FourierManager : MonoBehaviour
     public GameObject node;
     public GameObject dot;
 
-    private float timer;
-    private int counter = 0;
-    private int repeatNum = 10;
+    public Vector2Int coord;
+    public int vectorNumber;
+    public int maxAmplitude;
+    public int maxPeriod;
+    public double frequency;
+    public float speed;
 
     Fourier_2D_SimulDll.Fourier_2D_Simul fourier;
 
     void Start()
     {
-        fourier = new Fourier_2D_Simul(new Fourier_2D_Simul.InputPack(25, 25, 15, 5, 5, 0.001, circle, vector, node, dot));
-        //for(int i = 0; i < 1000; i++)
-        //{
-        //    fourier.MakeFourier();
-        //}
+        fourier = new Fourier_2D_Simul(new Fourier_2D_Simul.InputPack(coord.x, coord.y, vectorNumber, maxAmplitude, maxPeriod, frequency, circle, vector, node, dot));
 
-        InvokeRepeating("temp", 0.0f, 0.1f);
+        InvokeRepeating("temp", 0.0f, speed);
     }
 
     private void temp()
